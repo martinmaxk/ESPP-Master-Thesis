@@ -1,0 +1,55 @@
+The system is: CYGWIN - 3.4.6-1.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "/cygdrive/d/EHL-CDT/cmake-build/CMakeFiles/3.23.2/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "/cygdrive/d/EHL-CDT/cmake-build/CMakeFiles/3.23.2/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /cygdrive/d/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/cygdrive/c/ProgramData/chocolatey/bin/make.exe -f Makefile cmTC_364ab/fast && C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe  -f CMakeFiles/cmTC_364ab.dir/build.make CMakeFiles/cmTC_364ab.dir/build
+make[1]: Entering directory 'D:/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_364ab.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_364ab.dir/testCCompiler.c.o -c /cygdrive/d/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_364ab.exe
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_364ab.dir/link.txt --verbose=1
+/usr/bin/cc -Wl,--enable-auto-import  CMakeFiles/cmTC_364ab.dir/testCCompiler.c.o -o cmTC_364ab.exe -Wl,--out-implib,libcmTC_364ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory 'D:/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /cygdrive/d/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/cygdrive/c/ProgramData/chocolatey/bin/make.exe -f Makefile cmTC_061e8/fast && C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe  -f CMakeFiles/cmTC_061e8.dir/build.make CMakeFiles/cmTC_061e8.dir/build
+make[1]: Entering directory 'D:/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_061e8.dir/testCXXCompiler.cxx.o
+/usr/bin/c++.exe    -o CMakeFiles/cmTC_061e8.dir/testCXXCompiler.cxx.o -c /cygdrive/d/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_061e8.exe
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_061e8.dir/link.txt --verbose=1
+/usr/bin/c++.exe -Wl,--enable-auto-import  CMakeFiles/cmTC_061e8.dir/testCXXCompiler.cxx.o -o cmTC_061e8.exe -Wl,--out-implib,libcmTC_061e8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory 'D:/EHL-CDT/cmake-build/CMakeFiles/CMakeTmp'
+
+
+

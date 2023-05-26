@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rotational-Plane-Sweep", "Rotational-Plane-Sweep.csproj", "{5E869534-157C-49CF-A3AB-8848E498D19F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E869534-157C-49CF-A3AB-8848E498D19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E869534-157C-49CF-A3AB-8848E498D19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E869534-157C-49CF-A3AB-8848E498D19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E869534-157C-49CF-A3AB-8848E498D19F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F4D20B-A0D0-4623-A564-AD3A4FB4B634}
+	EndGlobalSection
+EndGlobal

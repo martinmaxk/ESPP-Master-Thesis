@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{14e85ae8-4516-4fd7-a464-69f55cab9e66}</ProjectGuid>
+    <RootNamespace>CGALWrapper</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Program Files\vcpkg\installed\x86-windows\include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\Program Files\vcpkg\installed\x86-windows\lib;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);;C:\Program Files\vcpkg\installed\x86-windows\include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);;C:\Program Files\vcpkg\installed\x86-windows\lib;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Program Files\vcpkg\installed\x64-windows\include;;C:\Program Files\vcpkg\installed\x64-windows\include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Program Files\vcpkg\installed\x64-windows\lib;;;C:\Program Files\vcpkg\installed\x64-windows\lib;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CGALWRAPPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CGALWRAPPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;CGALWRAPPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\vcpkg\installed\x64-windows\lib\gmp.lib;C:\Program Files\vcpkg\installed\x64-windows\lib\mpfr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CGALWRAPPER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Program Files\vcpkg\installed\x86-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26495;26451;26812;6387;6031;6385;6812;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\vcpkg\installed\x64-windows\lib\gmp.lib;C:\Program Files\vcpkg\installed\x64-windows\lib\mpfr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Arrangments\Arrangement2.h" />
+    <ClInclude Include="Arrangments\Arrangement2_EEK.h" />
+    <ClInclude Include="Arrangments\ArrangementMap.h" />
+    <ClInclude Include="Arrangments\ArrMultiLocator.h" />
+    <ClInclude Include="Arrangments\ArrFace2.h" />
+    <ClInclude Include="Arrangments\ArrHalfEdge2.h" />
+    <ClInclude Include="Arrangments\ArrVertex2.h" />
+    <ClInclude Include="Arrangments\SweepLine_EEK.h" />
+    <ClInclude Include="Arrangments\SweepLine_EIK.h" />
+    <ClInclude Include="Geometry\Box2_EIK.h" />
+    <ClInclude Include="Geometry\HPoint2_EEK.h" />
+    <ClInclude Include="Geometry\IntersectionResult.h" />
+    <ClInclude Include="Geometry\Intersections_geometry.h" />
+    <ClInclude Include="Geometry\Intersections_geometry_EIK.h" />
+    <ClInclude Include="Geometry\Intersections_geometry_EEK.h" />
+    <ClInclude Include="Geometry\HPoint2_EIK.h" />
+    <ClInclude Include="Geometry\Line2_EIK.h" />
+    <ClInclude Include="Geometry\Point2_EIK.h" />
+    <ClInclude Include="Geometry\Ray2_EIK.h" />
+    <ClInclude Include="Geometry\Segment2_EIK.h" />
+    <ClInclude Include="Geometry\Triangle2_EIK.h" />
+    <ClInclude Include="Triangulations\BaseTriangulation3.h" />
+    <ClInclude Include="Triangulations\ConstrainedDelaunayTriangulation2_EIK.h" />
+    <ClInclude Include="Triangulations\ConstrainedTriangulation2_EIK.h" />
+    <ClInclude Include="Triangulations\DelaunayTriangulation2_EIK.h" />
+    <ClInclude Include="Geometry\Index.h" />
+    <ClInclude Include="Geometry\Point2_EEK.h" />
+    <ClInclude Include="Geometry\Line2_EEK.h" />
+    <ClInclude Include="Polylines\Polyline2_EIK.h" />
+    <ClInclude Include="Polylines\Polyline3_EIK.h" />
+    <ClInclude Include="Polylines\Polyline3_EEK.h" />
+    <ClInclude Include="Polylines\Polyline2_EEK.h" />
+    <ClInclude Include="Polylines\Polyline2.h" />
+    <ClInclude Include="Polylines\Polyline3.h" />
+    <ClInclude Include="Geometry\Ray2_EEK.h" />
+    <ClInclude Include="Geometry\Segment2_EEK.h" />
+    <ClInclude Include="Geometry\Triangle2_EEK.h" />
+    <ClInclude Include="Triangulations\Triangulation2_EIK.h" />
+    <ClInclude Include="Triangulations\ConstrainedDelaunayTriangulation2_EEK.h" />
+    <ClInclude Include="Geometry\MinMax.h" />
+    <ClInclude Include="Triangulations\BaseTriangulation2.h" />
+    <ClInclude Include="Triangulations\ConstrainedDelaunayTriangulation2.h" />
+    <ClInclude Include="Triangulations\DelaunayTriangulation3_EEK.h" />
+    <ClInclude Include="Triangulations\DelaunayTriangulation3.h" />
+    <ClInclude Include="Triangulations\Triangulation3_EEK.h" />
+    <ClInclude Include="Geometry\Matrices.h" />
+    <ClInclude Include="Polygons\PolygonSimplification2_EIK.h" />
+    <ClInclude Include="Polygons\PolygonMinkowski_EIK.h" />
+    <ClInclude Include="Polygons\PolygonBoolean2_EIK.h" />
+    <ClInclude Include="Polygons\PolygonPartition2_EIK.h" />
+    <ClInclude Include="Polygons\PolygonOffset2_EIK.h" />
+    <ClInclude Include="Polygons\Polygon2_EIK.h" />
+    <ClInclude Include="Polygons\PolygonWithHoles2_EIK.h" />
+    <ClInclude Include="Polygons\PolygonVisibility_EIK.h" />
+    <ClInclude Include="Circlar\Circle2.h" />
+    <ClInclude Include="Circlar\Circle2_EEK.h" />
+    <ClInclude Include="Arrangments\SweepLine.h" />
+    <ClInclude Include="Polygons\PolygonMinkowski_EEK.h" />
+    <ClInclude Include="Polygons\PolygonMinkowski.h" />
+    <ClInclude Include="Polygons\PolygonVisiblity.h" />
+    <ClInclude Include="Polygons\PolygonVisibility_EEK.h" />
+    <ClInclude Include="Polygons\PolygonOffset2.h" />
+    <ClInclude Include="Polygons\PolygonOffset2_EEK.h" />
+    <ClInclude Include="Triangulations\Triangulation3.h" />
+    <ClInclude Include="Triangulations\TriCell3.h" />
+    <ClInclude Include="Triangulations\TriEdge2.h" />
+    <ClInclude Include="Collections\NativeList.h" />
+    <ClInclude Include="Triangulations\TriVertex3.h" />
+    <ClInclude Include="Utility\ArrayUtil.h" />
+    <ClInclude Include="Utility\CGALGlobal.h" />
+    <ClInclude Include="Utility\CGALGlobal_EIK_EEK.h" />
+    <ClInclude Include="Geometry\Geometry3.h" />
+    <ClInclude Include="Geometry\Intersections_shapes.h" />
+    <ClInclude Include="CGALWrapper.h" />
+    <ClInclude Include="Triangulations\ConstrainedTriangulation2.h" />
+    <ClInclude Include="Triangulations\ConstrainedTriangulation2_EEK.h" />
+    <ClInclude Include="Triangulations\DelaunayTriangulation2.h" />
+    <ClInclude Include="Triangulations\DelaunayTriangulation2_EEK.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Collections\IndexMap.h" />
+    <ClInclude Include="Geometry\Intersections_shapes_EIK.h" />
+    <ClInclude Include="Geometry\Box2_EEK.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Geometry\Geometry2.h" />
+    <ClInclude Include="Polygons\Polygon2.h" />
+    <ClInclude Include="Polygons\Polygon2_EEK.h" />
+    <ClInclude Include="Polygons\PolygonBoolean2.h" />
+    <ClInclude Include="Polygons\PolygonBoolean2_EEK.h" />
+    <ClInclude Include="Polygons\PolygonPartition2.h" />
+    <ClInclude Include="Polygons\PolygonPartition2_EEK.h" />
+    <ClInclude Include="Polygons\PolygonSimplification2.h" />
+    <ClInclude Include="Polygons\PolygonSimplification2_EEK.h" />
+    <ClInclude Include="Polygons\PolygonWithHoles2.h" />
+    <ClInclude Include="Polygons\PolygonWithHoles2_EEK.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Triangulations\Triangulation2.h" />
+    <ClInclude Include="Triangulations\Triangulation2_EEK.h" />
+    <ClInclude Include="Triangulations\TriangulationMap2.h" />
+    <ClInclude Include="Triangulations\TriFace2.h" />
+    <ClInclude Include="Triangulations\TriUtil.h" />
+    <ClInclude Include="Triangulations\TriVertex2.h" />
+    <ClInclude Include="Utility\VersionNumber.h" />
+    <ClInclude Include="Geometry\Vector2_EEK.h" />
+    <ClInclude Include="Geometry\Vector2_EIK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Arrangments\Arrangement2_EEK.cpp" />
+    <ClCompile Include="Arrangments\SweepLine_EEK.cpp" />
+    <ClCompile Include="Arrangments\SweepLine_EIK.cpp" />
+    <ClCompile Include="Geometry\Box2_EIK.cpp" />
+    <ClCompile Include="Geometry\HPoint2_EEK.cpp" />
+    <ClCompile Include="Geometry\Intersections_geometry_EIK.cpp" />
+    <ClCompile Include="Geometry\Intersections_geometry_EEK.cpp" />
+    <ClCompile Include="Geometry\HPoint2_EIK.cpp" />
+    <ClCompile Include="Geometry\Line2_EIK.cpp" />
+    <ClCompile Include="Geometry\Point2_EIK.cpp" />
+    <ClCompile Include="Geometry\Ray2_EIK.cpp" />
+    <ClCompile Include="Geometry\Segment2_EIK.cpp" />
+    <ClCompile Include="Geometry\Triangle2_EIK.cpp" />
+    <ClCompile Include="Triangulations\ConstrainedDelaunayTriangulation2_EIK.cpp" />
+    <ClCompile Include="Triangulations\ConstrainedTriangulation2_EIK.cpp" />
+    <ClCompile Include="Triangulations\DelaunayTriangulation2_EIK.cpp" />
+    <ClCompile Include="Geometry\Point2_EEK.cpp" />
+    <ClCompile Include="Geometry\Line2_EEK.cpp" />
+    <ClCompile Include="Polylines\Polyline2_EIK.cpp" />
+    <ClCompile Include="Polylines\Polyline3_EIK.cpp" />
+    <ClCompile Include="Polylines\Polyline3_EEK.cpp" />
+    <ClCompile Include="Polylines\Polyline2_EEK.cpp" />
+    <ClCompile Include="Geometry\Ray2_EEK.cpp" />
+    <ClCompile Include="Geometry\Segment2_EEK.cpp" />
+    <ClCompile Include="Geometry\Triangle2_EEK.cpp" />
+    <ClCompile Include="Triangulations\Triangulation2_EIK.cpp" />
+    <ClCompile Include="Triangulations\ConstrainedDelaunayTriangulation2_EEK.cpp" />
+    <ClCompile Include="Triangulations\DelaunayTriangulation3_EEK.cpp" />
+    <ClCompile Include="Triangulations\Triangulation3_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonSimplification2_EIK.cpp" />
+    <ClCompile Include="Polygons\PolygonMinkowski_EIK.cpp" />
+    <ClCompile Include="Polygons\PolygonBoolean2_EIK.cpp" />
+    <ClCompile Include="Polygons\PolygonPartition2_EIK.cpp" />
+    <ClCompile Include="Polygons\PolygonOffset2_EIK.cpp" />
+    <ClCompile Include="Polygons\Polygon2_EIK.cpp" />
+    <ClCompile Include="Polygons\PolygonWithHoles2_EIK.cpp" />
+    <ClCompile Include="Polygons\PolygonVisibility_EIK.cpp" />
+    <ClCompile Include="Circlar\Circle2_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonMinkowski_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonVisibility_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonOffset2_EEK.cpp" />
+    <ClCompile Include="Collections\NativeList.cpp" />
+    <ClCompile Include="Utility\CGALGlobal_EIK_EEK.cpp" />
+    <ClCompile Include="Triangulations\ConstrainedTriangulation2_EEK.cpp" />
+    <ClCompile Include="Triangulations\DelaunayTriangulation2_EEK.cpp" />
+    <ClCompile Include="Geometry\Intersections_shapes_EIK.cpp" />
+    <ClCompile Include="Geometry\Box2_EEK.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Polygons\Polygon2_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonBoolean2_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonPartition2_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonSimplification2_EEK.cpp" />
+    <ClCompile Include="Polygons\PolygonWithHoles2_EEK.cpp" />
+    <ClCompile Include="Triangulations\Triangulation2_EEK.cpp" />
+    <ClCompile Include="Utility\VersionNumber.cpp" />
+    <ClCompile Include="Geometry\Vector2_EEK.cpp" />
+    <ClCompile Include="Geometry\Vector2_EIK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CGALWrapper.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

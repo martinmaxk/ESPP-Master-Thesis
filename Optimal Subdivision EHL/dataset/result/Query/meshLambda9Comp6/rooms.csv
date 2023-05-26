@@ -1,0 +1,2 @@
+Map,NumVertices,Regions,M-CdtRegions,VisTime,PointLocationTime,ViaLabelTime,TotalTime,ViaLabelsCheckedAvg,VisibleChecksAvg,ViaLabelsPrunedAvg,NumViaLabels,HubSpaceMB,ViaSpaceMB,AuxSpaceMB,MeshSpaceMB,TotalSpaceMB,Cost/ViaLabels
+8room_005,35276,170133,20099,0.83560417,3.49854167,8.00457292,12.33871875,114.51510417,5.41979167,70.17552083,34128933,565.23392487,520.76618958,6.51375198,18.00462151,1110.51848793,0.45090747

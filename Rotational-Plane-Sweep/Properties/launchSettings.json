@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Rotational-Plane-Sweep": {
+      "commandName": "Project",
+      "commandLineArgs": "brc202d",
+      "nativeDebugging": false
+    }
+  }
+}
