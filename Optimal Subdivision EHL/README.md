@@ -1,6 +1,6 @@
 # Optimal Subdivision EHL
 
-##Introduction
+## Introduction
 
 This codebase is largely based off of the EHL implementation
 found here: https://github.com/goldi1027/EHL 
@@ -29,7 +29,12 @@ There may be a large overlap of via labels among neighboring
 cells, however this can be mitigated by using the aforementioned
 compression, which is made more effective by that property.
 
-##Running
+The results from experiments can be found as .csv files under dataset/result/Query.
+meshLambda[X]Comp[Y] contain results for lambda [X] with compression depth [Y].
+Lambda -1 is optimal subdivision. The .csv files currently there
+are the results from our experiment run.
+
+## Running
 
 To reproduce the result, use the two following bash scripts.
 
